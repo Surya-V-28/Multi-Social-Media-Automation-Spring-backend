@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: "learningwebflux"
+
+aws:
+  cognito:
+#    clientId: "2h1ig7mu8aokdd7pa31vad85o5"
+#    clientId: "1r132sefgs0bosk2jc0dddrlc4"
+#    clientId: "53ltp6q8s0sugbgu9u0l16h8j2"
+    clientId: "61ag4c35f06efg755mo5muss2n"
+    clientSecret: ""
+    userPoolId: "ap-south-1_DPfHos7MQ"
+    jwkSetUrl: ${AWS_COGNITO_JWK_SET_URL}
+
+  s3:
+    bucket: "socialmediapostscheduleriac-postmediafiles4f370056-kwxboqtyhxvu"
+
+facebook:
+  appId: "409166238954550"
+  appSecret: ${FACEBOOK_APP_SECRET}
+
+instagram:
+  appId: "833975175591745"
+  appSecret: ${INSTAGRAM_APP_SECRET}

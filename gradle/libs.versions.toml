@@ -1,0 +1,63 @@
+[versions]
+kotlin-jvm = "1.9.24"
+kotlinx-coroutines = "1.9.0"
+
+springframework-boot = "3.3.3"
+spring-dependency-management = "1.1.6"
+
+nimbus-jose-jwt = "9.41.1"
+
+aws-sdk-bom = "2.27.21"
+aws-sdk-kotlin-bom = "1.3.110"
+squareup-okhttp3 = "4.12.0"
+
+r2dbc-postgresql = "1.0.5.RELEASE"
+postgresql = "42.7.4"
+
+lombok = "1.18.34"
+
+hibernate-reactive = "2.4.1.Final"
+vertx-pg-client = "4.5.10"
+
+jackson-datatype-jsr310 = "2.17.2"
+
+[libraries]
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin-jvm" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-reactor = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-reactor", version.ref = "kotlinx-coroutines" }
+
+springboot-starter-webflux = { group = "org.springframework.boot", name = "spring-boot-starter-webflux" }
+springboot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
+reactor-test = { group = "io.projectreactor", name = "reactor-test" }
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
+
+springboot-security = { group = "org.springframework.boot", name = "spring-boot-starter-security" }
+nimbus-jose-jwt = { group = "com.nimbusds", name = "nimbus-jose-jwt", version.ref = "nimbus-jose-jwt" }
+
+springboot-devtools = { group = "org.springframework.boot", name = "spring-boot-devtools" }
+
+springboot-starter-quartz = { group = "org.springframework.boot", name = "spring-boot-starter-quartz" }
+
+aws-sdk-bom = { group = "software.amazon.awssdk", name = "bom", version.ref = "aws-sdk-bom" }
+aws-sdk-cognito-identity-provider = { group = "software.amazon.awssdk", name = "cognitoidentityprovider" }
+aws-sdk-s3 = { group = "software.amazon.awssdk", name = "s3" }
+aws-sdk-scheduler = { group = "software.amazon.awssdk", name = "scheduler" }
+aws-sdk-sso = { group = "software.amazon.awssdk", name = "sso" }
+aws-sdk-ssooidc = { group = "software.amazon.awssdk", name = "ssooidc" }
+
+aws-sdk-kotlin-bom = { group = "aws.sdk.kotlin", name = "bom", version.ref = "aws-sdk-kotlin-bom" }
+aws-sdk-kotlin-s3 = { group = "aws.sdk.kotlin", name = "s3", version.ref = "aws-sdk-kotlin-bom" }
+squareup-okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "squareup-okhttp3" }
+
+project-lombok-lombok = { group = "org.projectlombok", name = "lombok" }
+
+springboot-starter-data-r2dbc = { group = "org.springframework.boot", name = "spring-boot-starter-data-r2dbc" }
+r2dbc-postgresql = { group = "org.postgresql", name = "r2dbc-postgresql", version.ref = "r2dbc-postgresql" }
+postgresql = { group = "org.postgresql", name = "postgresql", version.ref = "postgresql" }
+
+jackson-datatype-jsr310 = { group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jsr310", version.ref = "jackson-datatype-jsr310" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-jvm" }
+springframework-boot = { id = "org.springframework.boot", version.ref = "springframework-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }
